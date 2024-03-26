@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" name="viewport" content="width=device-width">
@@ -7,24 +8,29 @@
     </head>
     <style>
     aside {
-      width: 30%;
-      padding-left: 15px;
+      width: 300px;
+      padding: 40px 0 0;
       margin-left: 15px;
-      float: left;
+      transition:left .25s ease;
+      right:0;
+      bottom:0;
       font-style: italic;
+        transition:left .25s ease-out;
       background-color: lightgray;
     }
     </style>
-    <aside>
+
+    
+    <body style= "background-color:#000000">
+        <aside>
         <div>        
             <ul>
                 <li><p>Coffee</p></li>
                 <li><p>Milk</p></li>        
             </ul>
         </div>
-    </aside>
-    
-    <body style= "background-color:#000000">
+        </aside>
+        <article>
         <div style="padding-top:60px;position:absolute;top:0;right:0;bottom:0;left:300px;transition:left .25s ease;">
         <div style="margin:10px 0;background-color:#1a1a1d;border-radius:20px;padding: 5px 5px 5px 70px;position:relative;">
             <div style="display:inline-block;padding: 5px 5px 5px 30px;">
@@ -52,7 +58,8 @@
                     </div>
             </div>
         </div>
-        </div>        
+        </div>
+        </article>
     </body>
 
 </html>
