@@ -13,7 +13,7 @@ body{
     top:0;
     bottom:0;
     font-style: italic;
-    font-size:1.3em;
+    font-size:1.0em;
     transition:left .25s ease-out;
     background-color: #1a1a1d;
 }
@@ -24,16 +24,30 @@ body{
 
 .sidebar-nav ul{
   list-style:none;
-  margin:0 0 0 15px;
+  margin:0 0 0 10px;
 }
 
 .sidebar-nav ul li{
-	margin:40px 0;
+	margin:10px 0;
 }
 
 .sidebar-nav ul a{
   color: #9addfc;
   text-decoration:none
+}
+
+.sidebar-nav ul ul{
+    display: none; /* 隐藏所有子列表 */
+}
+.sidebar-nav ul ul.active{
+    display: block; /* 显示活动子列表 */
+}
+
+.sidebar-nav ul ul li{
+  list-style-type: none;
+  color: #9addfc;
+  padding-left:0px;
+  margin:0 0 0 -30px;
 }
 
 .content{
