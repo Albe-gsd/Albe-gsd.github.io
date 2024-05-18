@@ -1,65 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" name="viewport" content="width=device-width">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Albe's Item Pack</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    </head>
-    <style>
-    aside {
-      width: 300px;
-      padding: 40px 0 0;
-      margin-left: 15px;
-      transition:left .25s ease;
-      right:0;
-      bottom:0;
-      font-style: italic;
-        transition:left .25s ease-out;
-      background-color: lightgray;
-    }
-    </style>
 
-    
-    <body style= "background-color:#222224">
-        <aside>
-        <div>        
-            <ul>
-                <li><p>Coffee</p></li>
-                <li><p>Milk</p></li>        
-            </ul>
-        </div>
-        </aside>
-        <article>
-        <div style="padding-top:60px;position:absolute;top:0;right:0;bottom:0;left:300px;transition:left .25s ease;">
-        <div style="margin:10px 0;background-color:#1a1a1d;border-radius:20px;padding: 5px 5px 5px 70px;position:relative;">
-            <div style="display:inline-block;padding: 5px 5px 5px 30px;">
-                    <img src="https://s2.loli.net/2023/06/22/KZgPfSuk76ymDtX.png"/>
-            </div>
-            <div style="display:inline-block;color:#9addfc;padding: 10px 5px 5px 10px;">
-                    <img src="https://s2.loli.net/2023/06/23/GuMHX5pcg7Q6r3o.png"/>
-                    <div style="display:flex;align-items:center;color:#9addfc;padding: 10px 5px 5px 10px;">
-                    • 吸收80%的伤害<br>
-                    • 攻击巨人boss时，伤害增加 25%
-                </div>
-            </div>
-        </div>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Albe's Item Pack</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+  <link href="main.css" rel="stylesheet" type="text/css">
+</head>
 
-        <div style="margin:10px 0;background-color:#1a1a1d;border-radius:20px;padding: 5px 5px 5px 70px;position:relative;">
-            <div style="display:inline-block;padding: 5px 5px 5px 30px;">
-                    <img src="https://s2.loli.net/2023/05/28/m3Y9HfntKhNawA2.png"/>
-            </div>
-            <div style="display:inline-block;color:#9addfc;padding: 10px 5px 5px 10px;">
-                    <img src="https://s2.loli.net/2023/05/28/ZVScIYTHWfDkO7t.png"/>
-                    <div style="display:flex;align-items:center;color:#9addfc;padding: 10px 5px 5px 10px;">
-                    • 吸收80%的伤害，沃姆伍德穿戴时为85%<br>
-                    • 下雨时，自动恢复耐久<br>
-                    • 不下雨时，如果穿戴者有雨露值，自动恢复耐久和新鲜度，
-                    </div>
-            </div>
+<body>
+  <aside class="siderbar">
+    <div class="sidebar-nav">
+      <ul>
+        <li>
+          <p>Plant</p>
+        </li>
+        <li>
+          <p>Armor</p>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <div class="content">
+    <div class="itembox">
+      <div class="box_main">
+        <img src="https://s2.loli.net/2023/06/22/KZgPfSuk76ymDtX.png" />
+      </div>
+      <div class="box_intro">
+        <img src="https://s2.loli.net/2023/06/23/GuMHX5pcg7Q6r3o.png" />
+        <div class="box_text">
+          • 吸收80%的伤害
+          <br /> • 攻击巨人boss时，伤害增加 25%
         </div>
+      </div>
+    </div>
+    <div class="itembox">
+      <div class="box_main">
+        <img src="https://s2.loli.net/2023/05/28/m3Y9HfntKhNawA2.png" />
+      </div>
+      <div class="box_intro">
+        <img src="https://s2.loli.net/2023/05/28/ZVScIYTHWfDkO7t.png" />
+        <div class="box_text">
+          • 吸收80%的伤害，沃姆伍德穿戴时为85%
+          <br /> • 下雨时，自动恢复耐久
+          <br /> • 不下雨时，如果穿戴者有雨露值，自动恢复耐久和新鲜度，
         </div>
-        </article>
-    </body>
+      </div>
+    </div>
+  </div>
+</body>
 
 </html>
