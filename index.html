@@ -14,18 +14,48 @@
     <div class="sidebar-nav">      
       <ul>
         <li>
-          <a href="#plant">Plant</a>
+          <a href="#plant" class="nav-link">Plant</a>
+          <ul>
+            <li>Plant1</li>
+            <li>Plant2</li>
+            <li>Plant3</li>
+          </ul>
         </li>
         <li>
-          <a href="#armor">Armor</a>
+          <a href="#armor" class="nav-link">Armor</a>
+          <ul>
+            <li>Armor1</li>
+            <li>Armor2</li>
+            <li>Plant3</li>
+          </ul>
         </li>
         <li>
-          <a href="#weapon">Weapon</a>
+          <a href="#weapon" class="nav-link">Weapon</a>
+          <ul>
+            <li>Weapon1</li>
+            <li>Weapon2</li>
+          </ul>
         </li>
       </ul>
     </div>
   </aside>
   
+  <script>
+    document.querySelectorAll('.nav-link').forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // 防止默认的链接跳转行为
+            
+            // 移除所有子列表的 active 类
+            document.querySelectorAll('.sidebar-nav ul ul').forEach(function(sublist) {
+                sublist.classList.remove('active');
+            });
+
+            // 为当前点击的链接的子列表添加 active 类
+            this.nextElementSibling.classList.add('active');
+        });
+    });
+  </script>
+
   <div class="content">
     <div class="itembox">
       <div class="box_main">
