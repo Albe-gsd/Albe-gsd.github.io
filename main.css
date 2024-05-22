@@ -1,6 +1,6 @@
 body{
   background-color:#222224;
-  font-family:Source Sans Pro,Helvetica Neue,Arial,sans-serif
+  font-family:Source Sans Pro,Helvetica Neue,Arial,sans-serif;
 }    
 .siderbar{
     border-right:2px solid rgba(154, 221, 252,0.5);
@@ -8,7 +8,7 @@ body{
     width: 300px;  
     padding: 40px 0 0;
     margin-left: 15px;
-    position:absolute;
+    position:fixed;
     left:0;
     top:0;
     bottom:0;
@@ -32,7 +32,7 @@ body{
 }
 
 .sidebar-nav ul a{
-  color: #9addfc;
+  color: #acacac;
   text-decoration:none
 }
 
@@ -45,26 +45,35 @@ body{
 
 .sidebar-nav ul ul li{
   list-style-type: none;
-  color: #9addfc;
+  font-size:0.9em;
+  color: #f8b280;
   padding-left:0px;
   margin:0 0 0 -30px;
 }
 
 .content{
-  padding:60px 150px 0 0;
+  padding:60px 10% 0 10%;
   position:absolute;
+  width:46%;
   top:0;
-  right:0;
   bottom:0;
-  left:340px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* left:340px; */
   transition:left .25s ease;
+}
+
+.itemtitle{
+  position:relative;
+  width:326px;
+  margin: 40px auto 20px;
 }
 
 .itembox{
   margin:10px 0;
   background-color:#1a1a1d;
   border-radius:20px;
-  padding: 5px 5px 5px 70px;
+  padding: 5px 5px 5px 3%;
   position:relative;
   display:flex;
   align-items:center;
@@ -72,22 +81,27 @@ body{
 
 .box_main{
   float:left;
-  padding: 5px 5px 5px 30px;
+  padding: 5px 5px 5px 10px;
 }
 
 .box_intro{
   float:left;
-  padding: 5px 5px 5px 30px;
+  padding: 5px 5px 5px 3%;
 }
 
 .box_text{
   display:flex;
   align-items:center;
-  color:#9addfc;
+  color:#b9bbec;
   padding: 10px 5px 5px 10px;
 }
 
 .box_text ul{
    padding: 0 15px;
    margin: 0px;
+   line-height:1.5em;
+}
+
+.box_text ul li{
+  font-size:0.9em;
 }
