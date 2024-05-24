@@ -14,7 +14,7 @@
     <div class="sidebar-nav">      
       <ul>
         <li>
-          <a href="/index_cn">Vegetation</a>
+          <a href="#plant" class="nav-link">Vegetation</a>
           <ul>
             <li>共鸣花 Resonance Flower</li>
           </ul>
@@ -99,6 +99,35 @@
   </script>
 
   <div class="content">
+    <!-- ------------------------Language------------------------------- -->
+    <div class="button-container">
+      <button id="zhButton" class="inactive" onclick="switchLanguage('zh')">中文 Chinese</button>
+      <button id="enButton" class="active" onclick="switchLanguage('en')">英文 English</button>
+    </div>
+
+    <script>
+      function switchLanguage(language) {
+          const zhButton = document.getElementById('zhButton');
+          const enButton = document.getElementById('enButton');
+          
+          if (language === 'zh') {
+              zhButton.classList.add('active');
+              zhButton.classList.remove('inactive');
+              enButton.classList.add('inactive');
+              enButton.classList.remove('active');
+              // 跳转到中文页面
+              window.location.href = 'index_cn.html';
+          } else if (language === 'en') {
+              zhButton.classList.add('inactive');
+              zhButton.classList.remove('active');
+              enButton.classList.add('active');
+              enButton.classList.remove('inactive');
+              // 跳转到英文页面
+              window.location.href = 'index.html';
+          }
+      }
+    </script>
+
     <!-- ------------------------Vegetation------------------------------- -->
     <div class="itemtitle">
       <img src="https://s2.loli.net/2024/05/19/6yRL15XNbuMhYOW.png"/>      
@@ -475,12 +504,16 @@
         <img src="https://s2.loli.net/2023/09/29/tOceP2E1k7QJ5nK.png" />
       </div>
       <div class="box_intro">
-        <img src="https://s2.loli.net/2024/04/25/XniOU6ugljJpMEm.png" />
+        <!-- <img src="https://s2.loli.net/2024/04/25/XniOU6ugljJpMEm.png" /> -->
         <div class="box_text">
           <ul>
-            <li>『死者苏生』复活死者</li>
-            <li>『团结之力』人多力量大</li>
-            <li>『独狼』也许你喜欢一个人行动</li>
+            <li>『死者苏生』主动：复活死者，耐久 5</li>
+            <li>『团结之力』被动：+20伤害，周围每有一个玩家额外+20，无上限，可叠加，耐150</li>
+            <li>『独狼』被动：周围没有玩家时，+50伤害，每次攻击获得4秒1.4倍加速，不可叠加，耐久150</li>
+            <li>『瓦格斯塔夫的人造月亮』被动：在夜晚时发出亮光，并获得理智回复加成，不可叠加</li>
+            <li>『威尔逊的生存技巧』被动：获得斧头、锄头、铲子和锤子的功能，效率是普通工具的2倍，不可叠加，耐久150</li>
+            <li>『温蒂的灵魂链接』被动：每次回复生命时（间隔3s），也会使周围的一个玩家回复恢复量一半的生命，耐久50</li>
+            <li>『沃拓克斯的魔契』被动：每击杀一个生物获得1耐久，伤害加成为总耐久的一半，初始耐久0，耐久上限200</li>
           </ul>
         </div>
       </div>
