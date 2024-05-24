@@ -62,6 +62,30 @@ body{
   /* left:340px; */
   transition:left .25s ease;
 }
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;      
+}
+
+.button-container button {
+  padding: 10px 10px;
+  width:250px;
+  margin: 0;
+  border:none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button-container button.active {
+  background-color: #5e61cc; /* 亮起的按钮颜色 */
+  color: white;
+}
+
+.button-container button.inactive {
+  background-color: #1a1a1d; /* 灰色的按钮颜色 */
+  color: #8b8b8b;
+}
 
 .itemtitle{
   position:relative;
