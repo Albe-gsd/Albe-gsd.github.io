@@ -1,13 +1,17 @@
 body{
-  background-color:#222224;
+  /* background-color:#222224; */
   font-family:Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+  background-image: url('image/bg_redux_dark_right.jpg'); 
+  background-size: cover; 
+  background-attachment:fixed;
+  background-repeat: no-repeat; 
 }    
 .siderbar{
     border-right:2px solid rgba(154, 221, 252,0.5);
     overflow-y:auto;
     width: 300px;  
     padding: 40px 0 0;
-    margin-left: 15px;
+    /* margin-left: 15px; */
     position:fixed;
     left:0;
     top:0;
@@ -46,9 +50,12 @@ body{
 .sidebar-nav ul ul li{
   list-style-type: none;
   font-size:0.9em;
-  color: #f8b280;
   padding-left:0px;
   margin:0 0 0 -30px;
+}
+
+.sidebar-nav ul ul li a{
+  color: #f8b280;
 }
 
 .content{
@@ -88,14 +95,24 @@ body{
 }
 
 .itemtitle{
-  position:relative;
-  width:326px;
-  margin: 40px auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin: 40px auto -20px;
 }
+
+.itemtitle img{
+  max-width: 80%;
+  max-height: 80%;
+  width: auto;
+  height: auto;
+}
+
 
 .itembox{
   margin:10px 0;
-  background-color:#1a1a1d;
+  background-color:#161622af;
   border-radius:20px;
   padding: 5px 5px 5px 3%;
   position:relative;
